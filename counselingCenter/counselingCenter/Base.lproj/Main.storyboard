@@ -49,6 +49,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="loginButton" destination="4Hd-nD-Y5y" id="n2j-t9-gtu"/>
                         <outlet property="welcomeLabel1" destination="UWv-HM-eT3" id="UxC-t1-Eld"/>
                         <outlet property="welcomeLabel2" destination="ZH4-bM-xYn" id="Hdy-g9-HLM"/>
                     </connections>
