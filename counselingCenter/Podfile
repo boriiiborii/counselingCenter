@@ -6,6 +6,9 @@ target 'counselingCenter' do
   use_frameworks!
 
   # Pods for counselingCenter
-	pod 'KakaoSDK'
+	pod 'KakaoSDKCommon'
+	pod 'KakaoSDKAuth'
+	pod 'KakaoSDKUser'
+	pod 'KakaoSDKTalk'
 
 end
