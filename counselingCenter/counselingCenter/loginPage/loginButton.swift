@@ -32,7 +32,8 @@ class loginButton: UIButton {
         configuration.image = UIImage(systemName: "message.fill")
         configuration.background.backgroundColor = .yellow
         configuration.baseForegroundColor = .brown
-        configuration.contentInsets = .init(top: 10, leading: 60, bottom: 10, trailing: 60)
+        configuration.contentInsets = .init(top: 15, leading: 10, bottom: 15, trailing: 10)
+        configuration.imagePadding = 10
         self.configuration = configuration
     }
     

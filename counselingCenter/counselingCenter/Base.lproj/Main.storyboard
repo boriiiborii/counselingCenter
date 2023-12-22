@@ -34,7 +34,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mlT-4J-C10" customClass="loginButton" customModule="counselingCenter" customModuleProvider="target">
-                                <rect key="frame" x="136" y="713" width="121" height="30"/>
+                                <rect key="frame" x="50" y="713" width="293" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="카카오톡으로 로그인"/>
@@ -44,6 +44,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="mlT-4J-C10" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="K1J-9R-RFy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mlT-4J-C10" secondAttribute="trailing" constant="50" id="WUR-rM-nlN"/>
+                            <constraint firstItem="mlT-4J-C10" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="hhL-K3-ZYa"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mlT-4J-C10" secondAttribute="bottom" constant="75" id="iKE-Bs-fRB"/>
                             <constraint firstItem="hmX-D6-HVm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jQn-vB-QMV"/>
                             <constraint firstItem="hmX-D6-HVm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="176" id="mMe-gn-lss"/>
