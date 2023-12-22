@@ -14,6 +14,7 @@
 		DBE275662B35349200BCA73E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBE275642B35349200BCA73E /* LaunchScreen.storyboard */; };
 		DBE275712B35392800BCA73E /* loginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE275702B35392800BCA73E /* loginController.swift */; };
 		DBE275732B35400000BCA73E /* loginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE275722B35400000BCA73E /* loginButton.swift */; };
+		DBE275762B35727700BCA73E /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE275752B35727700BCA73E /* UIColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		DBE275672B35349200BCA73E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBE275702B35392800BCA73E /* loginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginController.swift; sourceTree = "<group>"; };
 		DBE275722B35400000BCA73E /* loginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginButton.swift; sourceTree = "<group>"; };
+		DBE275752B35727700BCA73E /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		DBE275582B35349100BCA73E /* counselingCenter */ = {
 			isa = PBXGroup;
 			children = (
+				DBE275742B35723500BCA73E /* Extension */,
 				DBE2756D2B3538D600BCA73E /* loginPage */,
 				DBE275592B35349100BCA73E /* AppDelegate.swift */,
 				DBE2755B2B35349100BCA73E /* SceneDelegate.swift */,
@@ -76,6 +79,14 @@
 				DBE275722B35400000BCA73E /* loginButton.swift */,
 			);
 			path = loginPage;
+			sourceTree = "<group>";
+		};
+		DBE275742B35723500BCA73E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DBE275752B35727700BCA73E /* UIColorExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +162,7 @@
 			files = (
 				DBE275712B35392800BCA73E /* loginController.swift in Sources */,
 				DBE275732B35400000BCA73E /* loginButton.swift in Sources */,
+				DBE275762B35727700BCA73E /* UIColorExtension.swift in Sources */,
 				DBE2755A2B35349100BCA73E /* AppDelegate.swift in Sources */,
 				DBE2755C2B35349100BCA73E /* SceneDelegate.swift in Sources */,
 			);

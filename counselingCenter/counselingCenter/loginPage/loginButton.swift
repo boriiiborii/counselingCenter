@@ -30,8 +30,8 @@ class loginButton: UIButton {
     private func setupConfiguration() {
         var configuration = UIButton.Configuration.plain()
         configuration.image = UIImage(systemName: "message.fill")
-        configuration.background.backgroundColor = .yellow
-        configuration.baseForegroundColor = .brown
+        configuration.background.backgroundColor = UIColor.kakaoYellow
+        configuration.baseForegroundColor = .black
         configuration.contentInsets = .init(top: 15, leading: 10, bottom: 15, trailing: 10)
         configuration.imagePadding = 10
         self.configuration = configuration
@@ -42,7 +42,6 @@ class loginButton: UIButton {
                 string: "카카오톡으로 로그인하기",
                 attributes: [
                     .font: UIFont.boldSystemFont(ofSize: 20),
-                    .foregroundColor: UIColor.brown
                 ]
             )
             self.setAttributedTitle(attributeString, for: .normal)
