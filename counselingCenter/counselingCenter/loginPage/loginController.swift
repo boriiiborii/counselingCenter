@@ -21,7 +21,7 @@ class loginController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setLoginButton()
     }
     
     private func animatingWelcomeLabel() {
@@ -42,6 +42,10 @@ class loginController: UIViewController {
             //0.8초 간격으로 구성요소들이 나타남
             times += 0.8
         }
+    }
+    
+    private func setLoginButton() {
+        
     }
     
 }
