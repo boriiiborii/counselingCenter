@@ -21,7 +21,6 @@ class loginController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setLoginButton()
     }
     
     private func animatingWelcomeLabel() {
@@ -43,10 +42,11 @@ class loginController: UIViewController {
             times += 0.8
         }
     }
-    
-    private func setLoginButton() {
-        
+
+    @IBAction func loginButtonTapped(_ sender: Any) {
+        //로그인 로직 진행하기
     }
+    
     
 }
 
