@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import KakaoSDKUser
 
 class loginController: UIViewController {
     
@@ -45,7 +46,24 @@ class loginController: UIViewController {
 
     @IBAction func loginButtonTapped(_ sender: Any) {
         //로그인 로직 진행하기
+        
+        // 카카오톡 설치 여부 확인
+        if (UserApi.isKakaoTalkLoginAvailable()) {
+            UserApi.shared.loginWithKakaoTalk {(oauthToken, error) in
+                if let error = error {
+                    print(error)
+                }
+                else {
+                    print("loginWithKakaoTalk() success.")
+
+                    //do something
+                    _ = oauthToken
+                }
+            }
+        }
     }
+    
+    
     
     
 }
