@@ -97,7 +97,7 @@ class loginController: UIViewController {
                 //do something
                 _ = user
                 UserInfoModel.share.nickName = user?.kakaoAccount?.profile?.nickname
-                UserInfoModel.share.name = user?.kakaoAccount?.name
+                UserInfoModel.share.name = user?.kakaoAccount?.name ?? "사용자"
                 UserInfoModel.share.gender = user?.kakaoAccount?.gender
                 UserInfoModel.share.profilImageUrl = user?.kakaoAccount?.profile?.profileImageUrl
                 UserInfoModel.share.age = user?.kakaoAccount?.ageRange

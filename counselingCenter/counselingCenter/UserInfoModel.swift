@@ -16,8 +16,18 @@ class UserInfoModel {
     var profilImageUrl: URL?
     var age: AgeRange?
     var email: String?
+    var specializedField: [Field]?
     
     private init() {
         
     }
+}
+
+enum Field: String {
+    case religion = "종교"
+    case school = "학교"
+    case dating = "연애"
+    case realEstate = "부동산"
+    case politics = "정치"
+    case life = "인생"
 }
