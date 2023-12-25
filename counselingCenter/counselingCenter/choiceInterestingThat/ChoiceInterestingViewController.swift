@@ -51,9 +51,7 @@ class ChoiceInterestingViewController: UIViewController {
     }
     
     @IBAction func nextButtonTapped(_ sender: UIButton) {
-        //userInfo에다 interestedFiled 채워야함
         setSpecializedField()
-        print(UserInfoModel.share.specializedField!)
     }
     
     private func animatingWelcomeLabel() {
