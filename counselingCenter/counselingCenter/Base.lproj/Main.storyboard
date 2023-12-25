@@ -226,54 +226,142 @@
             </objects>
             <point key="canvasLocation" x="872.51908396946567" y="-1.4084507042253522"/>
         </scene>
-        <!--채팅-->
+        <!--View Controller-->
         <scene sceneID="hd8-fR-gyQ">
             <objects>
                 <viewController id="GAN-2Y-E3o" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oym-Bv-aWe">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ynu-my-mB4">
+                                <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="PVP-f0-GV8"/>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aqu-6u-Z9Z">
+                                <rect key="frame" x="218" y="406" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Button"/>
+                                <connections>
+                                    <segue destination="Rae-G8-3Zg" kind="show" id="5fR-p0-zGR"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="dgv-zb-moC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="채팅" image="message" catalog="system" id="lWV-cP-Qil"/>
+                    <navigationItem key="navigationItem" id="nUD-Dp-DCv"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YWz-5Q-fIj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3520" y="-73"/>
+            <point key="canvasLocation" x="4529" y="-73"/>
         </scene>
-        <!--마이페이지-->
+        <!--View Controller-->
         <scene sceneID="fEs-Wx-Mat">
             <objects>
                 <viewController id="Vpv-ha-EjG" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Sj2-fc-so5">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iRr-Na-s7J">
+                                <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="JJI-uc-Xgp"/>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hav-IM-u9O">
+                                <rect key="frame" x="144" y="380" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Button"/>
+                                <connections>
+                                    <segue destination="ORX-eo-b75" kind="show" id="Mup-Kf-1A9"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Vc-dC-TUQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="마이페이지" image="person" catalog="system" id="AIY-0b-eMm"/>
+                    <navigationItem key="navigationItem" id="sXV-CS-gbp"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X5L-aX-Q8V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3520" y="596"/>
+            <point key="canvasLocation" x="4592" y="617"/>
         </scene>
-        <!--홈-->
+        <!--View Controller-->
         <scene sceneID="scl-IM-Sdf">
             <objects>
                 <viewController id="DkS-Rh-i8i" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="l17-8o-Ko9">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xfT-oS-PzG">
+                                <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="Xok-AD-2SM"/>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TTE-gn-muW">
+                                <rect key="frame" x="159" y="387" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Button"/>
+                                <connections>
+                                    <segue destination="icG-Hh-CMH" kind="show" id="Nyn-IV-ONO"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="CUW-va-wP7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="홈" image="house" catalog="system" id="DRk-5t-IHs"/>
+                    <navigationItem key="navigationItem" id="Izg-ih-Gn1"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vOI-uv-xqA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3520" y="-767"/>
+            <point key="canvasLocation" x="4527" y="-740"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="lkp-dC-WWa">
+            <objects>
+                <viewController id="icG-Hh-CMH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Va-tj-U5v">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Jvi-v0-4X4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="SFH-it-uSn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1qW-g4-zFd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5460" y="-756"/>
+        </scene>
+        <!--채팅-->
+        <scene sceneID="dxE-Lg-0fe">
+            <objects>
+                <navigationController id="3dq-eS-Jlh" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="채팅" image="message" catalog="system" id="8yC-KA-vBK"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AcA-7E-BdZ">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="GAN-2Y-E3o" kind="relationship" relationship="rootViewController" id="YZI-Fq-NEK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oFO-ZC-P46" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3595" y="-73"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ndl-rK-reT">
@@ -285,14 +373,80 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="DkS-Rh-i8i" kind="relationship" relationship="viewControllers" id="Ul6-Dn-ZaS"/>
-                        <segue destination="GAN-2Y-E3o" kind="relationship" relationship="viewControllers" id="3Ku-hq-OhY"/>
-                        <segue destination="Vpv-ha-EjG" kind="relationship" relationship="viewControllers" id="I3H-82-ybw"/>
+                        <segue destination="S5m-YW-cjK" kind="relationship" relationship="viewControllers" id="2HS-pS-K9J"/>
+                        <segue destination="3dq-eS-Jlh" kind="relationship" relationship="viewControllers" id="7ip-NU-pGZ"/>
+                        <segue destination="ynk-kS-GG5" kind="relationship" relationship="viewControllers" id="Xkg-iO-lcP"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Fo-aF-qcx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2223" y="-72"/>
+        </scene>
+        <!--마이페이지-->
+        <scene sceneID="uYw-sP-zcQ">
+            <objects>
+                <navigationController id="ynk-kS-GG5" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="마이페이지" image="person" catalog="system" id="Cb7-3D-dlV"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kmv-Td-ata">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Vpv-ha-EjG" kind="relationship" relationship="rootViewController" id="cSr-wR-MuK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i5k-dB-z4H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3595" y="617"/>
+        </scene>
+        <!--홈-->
+        <scene sceneID="gds-XB-qOZ">
+            <objects>
+                <navigationController id="S5m-YW-cjK" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="홈" image="house" catalog="system" id="lSN-xY-q97"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HdZ-zP-Bja">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="DkS-Rh-i8i" kind="relationship" relationship="rootViewController" id="DaM-pK-7yq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XBa-al-s2Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3595" y="-756"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Qrj-cy-ro7">
+            <objects>
+                <viewController id="Rae-G8-3Zg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eho-HG-AYP">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="sOQ-6c-5Cu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ec3-IK-oXq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sUX-a2-cxx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5459" y="-73"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="sHQ-12-myt">
+            <objects>
+                <viewController id="ORX-eo-b75" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KXM-mq-EsP">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="nct-re-cyV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="keN-bm-NQM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6NG-H3-izN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5459" y="617"/>
         </scene>
     </scenes>
     <resources>
