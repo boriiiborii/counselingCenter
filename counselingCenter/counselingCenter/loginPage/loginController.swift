@@ -58,7 +58,21 @@ class loginController: UIViewController {
 
                     //do something
                     _ = oauthToken
+                    let accessToken = oauthToken?.accessToken
                 }
+            }
+        }else {
+            //카카오톡이 설치되지 않았을때 웹으로 로그인
+            UserApi.shared.loginWithKakaoAccount {(oauthToken, error) in
+               if let error = error {
+                 print(error)
+               }
+               else {
+                print("loginWithKakaoAccount() success.")
+                
+                //do something
+                _ = oauthToken
+               }
             }
         }
     }
