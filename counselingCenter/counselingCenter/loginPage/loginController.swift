@@ -43,7 +43,7 @@ class loginController: UIViewController {
             times += 0.8
         }
     }
-
+    
     @IBAction func loginButtonTapped(_ sender: Any) {
         //로그인 로직 진행하기
         
@@ -56,34 +56,39 @@ class loginController: UIViewController {
                 }
                 else {
                     print("loginWithKakaoTalk() success.")
-
+                    
                     //do something
                     _ = oauthToken
                     let accessToken = oauthToken?.accessToken
                     //카카오 로그인을 통해 토큰을 발급 받은 후 사용자 관리 API호출
-                    self.setUserInfo()
+                    self.setUserInfo(){
+                        self.presentNextViewController()
+                    }
                 }
             }
         }else {
             //카카오톡이 설치되지 않았을때 웹으로 로그인
             UserApi.shared.loginWithKakaoAccount {(oauthToken, error) in
-               if let error = error {
-                 print(error)
-               }
-               else {
-                print("loginWithKakaoAccount() success.")
-                
-                //do something
-                _ = oauthToken
-                   let accessToken = oauthToken?.accessToken
-                   //카카오 로그인을 통해 토큰을 발급 받은 후 사용자 관리 API호출
-                   self.setUserInfo()
-               }
+                if let error = error {
+                    print(error)
+                }
+                else {
+                    print("loginWithKakaoAccount() success.")
+                    
+                    //do something
+                    _ = oauthToken
+                    let accessToken = oauthToken?.accessToken
+                    //카카오 로그인을 통해 토큰을 발급 받은 후 사용자 관리 API호출
+                    self.setUserInfo(){
+                        self.presentNextViewController()
+                    }
+                }
             }
         }
+        
     }
     
-    func setUserInfo() {
+    func setUserInfo(completion: @escaping () -> Void) {
         //사용자 관리 api 호출
         UserApi.shared.me() {(user, error) in
             if let error = error {
@@ -96,7 +101,15 @@ class loginController: UIViewController {
                 self.welcomeLabel1.text = user?.kakaoAccount?.profile?.nickname
             }
         }
+        completion()
     }
     
+    func presentNextViewController() {
+        guard let nextViewController = self.storyboard?.instantiateViewController(identifier: "ChoiceInterestingViewController") as? ChoiceInterestingViewController else { return }
+        
+        nextViewController.modalTransitionStyle = .crossDissolve
+        nextViewController.modalPresentationStyle = .fullScreen
+        
+        self.present(nextViewController, animated: true)
+    }
 }
-
