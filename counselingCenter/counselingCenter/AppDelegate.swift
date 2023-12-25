@@ -12,7 +12,7 @@ import KakaoSDKAuth
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        KakaoSDK.initSDK(appKey: "0c7afead50850851d4957e62de5bc7ec")
+        KakaoSDK.initSDK(appKey: AppData.share.nativeAppKey)
         return true
     }
 
