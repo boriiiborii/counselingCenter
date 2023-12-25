@@ -18,9 +18,15 @@ class ChoiceInterestingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        setElement()
     }
-    
+
+    private func setElement() {
+        [nameLabel, descriptionLabel, buttonBackgroundColorLabel].forEach {
+            $0.self?.roundCorners(cornerRadius: 10)
+        }
+        buttonStackView.subviews.forEach{$0.self.roundCorners(cornerRadius: 10)}
+    }
     
     
     
