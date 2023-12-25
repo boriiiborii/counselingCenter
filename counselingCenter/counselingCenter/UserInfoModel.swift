@@ -6,17 +6,18 @@
 //
 
 import Foundation
+import KakaoSDKUser
 
 class UserInfoModel {
+    static let share = UserInfoModel()
     var name: String?
     var nickName: String?
-    var sex: Sex?
-    var profilImageUrl: String?
-    var age: Int?
+    var gender: Gender?
+    var profilImageUrl: URL?
+    var age: AgeRange?
     var email: String?
-}
-
-enum Sex {
-    case man
-    case woman
+    
+    private init() {
+        
+    }
 }

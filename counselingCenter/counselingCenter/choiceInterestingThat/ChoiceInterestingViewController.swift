@@ -22,13 +22,16 @@ class ChoiceInterestingViewController: UIViewController {
     }
 
     private func setElement() {
+        roundCorners()
+        nameLabel.text = UserInfoModel.share.name
+    }
+    
+    private func roundCorners() {
         [nameLabel, descriptionLabel, buttonBackgroundColorLabel].forEach {
             $0.self?.roundCorners(cornerRadius: 10)
         }
         buttonStackView.subviews.forEach{$0.self.roundCorners(cornerRadius: 10)}
     }
-    
-    
     
     
     

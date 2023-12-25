@@ -58,7 +58,6 @@ class loginController: UIViewController {
                     print("loginWithKakaoTalk() success.")
                     
                     //do something
-                    _ = oauthToken
                     let accessToken = oauthToken?.accessToken
                     //카카오 로그인을 통해 토큰을 발급 받은 후 사용자 관리 API호출
                     self.setUserInfo(){
@@ -76,7 +75,6 @@ class loginController: UIViewController {
                     print("loginWithKakaoAccount() success.")
                     
                     //do something
-                    _ = oauthToken
                     let accessToken = oauthToken?.accessToken
                     //카카오 로그인을 통해 토큰을 발급 받은 후 사용자 관리 API호출
                     self.setUserInfo(){
@@ -98,7 +96,14 @@ class loginController: UIViewController {
                 print("me() success.")
                 //do something
                 _ = user
-                self.welcomeLabel1.text = user?.kakaoAccount?.profile?.nickname
+                UserInfoModel.share.nickName = user?.kakaoAccount?.profile?.nickname
+                UserInfoModel.share.name = user?.kakaoAccount?.name
+                UserInfoModel.share.gender = user?.kakaoAccount?.gender
+                UserInfoModel.share.profilImageUrl = user?.kakaoAccount?.profile?.profileImageUrl
+                UserInfoModel.share.age = user?.kakaoAccount?.ageRange
+                if (user?.kakaoAccount?.emailNeedsAgreement)! {
+                    UserInfoModel.share.email = user?.kakaoAccount?.email
+                }
             }
         }
         completion()
