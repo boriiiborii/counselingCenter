@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9BAEF77F55249895E87B40DE /* Pods_counselingCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7019984A1323F6EF7D552089 /* Pods_counselingCenter.framework */; };
+		29BF5CA47DF660A6401F4496 /* Pods_counselingCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95F2200D9EE942D55260DC56 /* Pods_counselingCenter.framework */; };
+		DB07293B2B3EBD730001903C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB0729362B3EB9040001903C /* GoogleService-Info.plist */; };
 		DBC80D342B391C3E00C88F0A /* ChoiceInterestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC80D332B391C3E00C88F0A /* ChoiceInterestingViewController.swift */; };
 		DBC80D362B39237300C88F0A /* UserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC80D352B39237300C88F0A /* UserInfoModel.swift */; };
 		DBC80D382B3928BA00C88F0A /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC80D372B3928BA00C88F0A /* AppModel.swift */; };
@@ -23,9 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7019984A1323F6EF7D552089 /* Pods_counselingCenter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_counselingCenter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		77EFF86F615ADD28BA285D0D /* Pods-counselingCenter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-counselingCenter.release.xcconfig"; path = "Target Support Files/Pods-counselingCenter/Pods-counselingCenter.release.xcconfig"; sourceTree = "<group>"; };
-		9DF0E9426C7DE93614458058 /* Pods-counselingCenter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-counselingCenter.debug.xcconfig"; path = "Target Support Files/Pods-counselingCenter/Pods-counselingCenter.debug.xcconfig"; sourceTree = "<group>"; };
+		225CDE7E8305A284413835F8 /* Pods-counselingCenter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-counselingCenter.debug.xcconfig"; path = "Target Support Files/Pods-counselingCenter/Pods-counselingCenter.debug.xcconfig"; sourceTree = "<group>"; };
+		95F2200D9EE942D55260DC56 /* Pods_counselingCenter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_counselingCenter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6D7BACB6061EC181450EC29 /* Pods-counselingCenter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-counselingCenter.release.xcconfig"; path = "Target Support Files/Pods-counselingCenter/Pods-counselingCenter.release.xcconfig"; sourceTree = "<group>"; };
+		DB0729362B3EB9040001903C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DBC80D332B391C3E00C88F0A /* ChoiceInterestingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceInterestingViewController.swift; sourceTree = "<group>"; };
 		DBC80D352B39237300C88F0A /* UserInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoModel.swift; sourceTree = "<group>"; };
 		DBC80D372B3928BA00C88F0A /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
@@ -47,7 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BAEF77F55249895E87B40DE /* Pods_counselingCenter.framework in Frameworks */,
+				29BF5CA47DF660A6401F4496 /* Pods_counselingCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,16 +59,16 @@
 		84F6A783AB4EA3DC5F32BD0A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9DF0E9426C7DE93614458058 /* Pods-counselingCenter.debug.xcconfig */,
-				77EFF86F615ADD28BA285D0D /* Pods-counselingCenter.release.xcconfig */,
+				225CDE7E8305A284413835F8 /* Pods-counselingCenter.debug.xcconfig */,
+				C6D7BACB6061EC181450EC29 /* Pods-counselingCenter.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		BB082E1D0F09DEC22BCBC49B /* Frameworks */ = {
+		C2CECAE2B9CE215E013842EC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7019984A1323F6EF7D552089 /* Pods_counselingCenter.framework */,
+				95F2200D9EE942D55260DC56 /* Pods_counselingCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -85,7 +87,7 @@
 				DBE275582B35349100BCA73E /* counselingCenter */,
 				DBE275572B35349100BCA73E /* Products */,
 				84F6A783AB4EA3DC5F32BD0A /* Pods */,
-				BB082E1D0F09DEC22BCBC49B /* Frameworks */,
+				C2CECAE2B9CE215E013842EC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,9 +110,10 @@
 				DBE2755F2B35349100BCA73E /* Main.storyboard */,
 				DBE275622B35349200BCA73E /* Assets.xcassets */,
 				DBE275642B35349200BCA73E /* LaunchScreen.storyboard */,
-				DBE275672B35349200BCA73E /* Info.plist */,
 				DBC80D352B39237300C88F0A /* UserInfoModel.swift */,
 				DBC80D372B3928BA00C88F0A /* AppModel.swift */,
+				DBE275672B35349200BCA73E /* Info.plist */,
+				DB0729362B3EB9040001903C /* GoogleService-Info.plist */,
 			);
 			path = counselingCenter;
 			sourceTree = "<group>";
@@ -140,11 +143,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DBE2756A2B35349200BCA73E /* Build configuration list for PBXNativeTarget "counselingCenter" */;
 			buildPhases = (
-				F30D2E5E20AD3E82A37D503D /* [CP] Check Pods Manifest.lock */,
+				760F063D01FF2D4EC0015093 /* [CP] Check Pods Manifest.lock */,
 				DBE275522B35349100BCA73E /* Sources */,
 				DBE275532B35349100BCA73E /* Frameworks */,
 				DBE275542B35349100BCA73E /* Resources */,
-				43B82244D84EB02DC521FBC5 /* [CP] Embed Pods Frameworks */,
+				233E82FBBF2D655D158D09B5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -193,6 +196,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB07293B2B3EBD730001903C /* GoogleService-Info.plist in Resources */,
 				DBE275662B35349200BCA73E /* LaunchScreen.storyboard in Resources */,
 				DBE275632B35349200BCA73E /* Assets.xcassets in Resources */,
 				DBE275612B35349100BCA73E /* Main.storyboard in Resources */,
@@ -202,7 +206,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		43B82244D84EB02DC521FBC5 /* [CP] Embed Pods Frameworks */ = {
+		233E82FBBF2D655D158D09B5 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -219,7 +223,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-counselingCenter/Pods-counselingCenter-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F30D2E5E20AD3E82A37D503D /* [CP] Check Pods Manifest.lock */ = {
+		760F063D01FF2D4EC0015093 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -398,7 +402,7 @@
 		};
 		DBE2756B2B35349200BCA73E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9DF0E9426C7DE93614458058 /* Pods-counselingCenter.debug.xcconfig */;
+			baseConfigurationReference = 225CDE7E8305A284413835F8 /* Pods-counselingCenter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -428,7 +432,7 @@
 		};
 		DBE2756C2B35349200BCA73E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 77EFF86F615ADD28BA285D0D /* Pods-counselingCenter.release.xcconfig */;
+			baseConfigurationReference = C6D7BACB6061EC181450EC29 /* Pods-counselingCenter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

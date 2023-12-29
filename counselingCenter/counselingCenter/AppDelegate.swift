@@ -4,15 +4,17 @@
 //
 //  Created by leehwajin on 2023/12/22.
 //
-
+import Firebase
+import FirebaseCore
 import UIKit
 import KakaoSDKCommon
 import KakaoSDKAuth
 
-@main
+@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         KakaoSDK.initSDK(appKey: AppData.share.nativeAppKey)
+        FirebaseApp.configure()
         return true
     }
 
