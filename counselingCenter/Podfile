@@ -10,5 +10,6 @@ target 'counselingCenter' do
 	pod 'KakaoSDKAuth'
 	pod 'KakaoSDKUser'
 	pod 'KakaoSDKTalk'
+	pod 'SnapKit', '~> 5.6.0'
 
 end
